@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brandon Huntley | Software Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-animation"></div>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo">BH<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle">🌙</button>
+    </nav>
+  </header>
+
+  <main class="workspace-shell">
+    <aside class="personal-sidebar" aria-label="Personal profile sidebar">
+      <div class="profile-card">
+        <div class="profile-photo main-photo">
+          <img src="assets/profile-suit.jpg" alt="Brandon Huntley in a suit standing in front of his truck" />
+        </div>
+        <h2>Brandon <span>Huntley</span></h2>
+        <p class="profile-title">Software Developer</p>
+        <p class="profile-location">📍 Raleigh, NC</p>
+        <p class="profile-status">● Open to Work</p>
+
+        <div class="profile-actions">
+          <a href="https://www.linkedin.com/in/brandon-huntley-36227b21a" target="_blank">in</a>
+          <a href="mailto:brandonhuntley902@gmail.com">✉</a>
+          <a href="https://github.com/ChubbyDiddy" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <div class="photo-grid">
+        <div class="profile-photo small-photo wide-photo">
+          <img src="assets/hero-car.jpg" alt="Brandon Huntley standing in front of his truck at night" />
+        </div>
+        <div class="profile-photo small-photo">
+          <img src="assets/guitar.jpg" alt="Brandon Huntley playing guitar" />
+        </div>
+      </div>
+
+      <div class="sidebar-note">
+        <p class="quote-mark">“</p>
+        <p>Code. Drive. Build. Repeat.</p>
+        <span>Developer mindset. Real-world discipline. Creative energy.</span>
+      </div>
+    </aside>
+
+    <aside class="vscode-sidebar" aria-label="Portfolio explorer">
+      <div class="explorer-title">EXPLORER</div>
+      <div class="folder">▾ Brandon-Huntley</div>
+      <a href="#about">🏠 About.jsx</a>
+      <a href="#skills">⚙ Skills.css</a>
+      <a href="#projects">💻 Projects.js</a>
+      <a href="#experience">💼 Experience.json</a>
+      <a href="#education">🎓 Education.md</a>
+      <a href="#contact">✉ Contact.html</a>
+      <a href="Brandon_Huntley_Resume.pdf" download>📄 Resume.pdf</a>
+    </aside>
+
+    <div class="portfolio-content">
+      <section class="hero" id="home">
+        <div class="hero-content fade-in">
+          <p class="eyebrow">&lt; Software Developer /&gt; • Front-End Developer</p>
+          <h1>Hi, I'm <span>Brandon Huntley</span>.</h1>
+          <h2>I build <span id="typingText"></span></h2>
+          <p class="hero-text">
+            I create responsive, user-friendly web applications with HTML, CSS, JavaScript, React, API integration, and clean problem-solving.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn primary-btn">View Projects</a>
+            <a href="Brandon_Huntley_Resume.pdf" class="btn secondary-btn" download>Download Resume</a>
+          </div>
+        </div>
+
+        <div class="code-card fade-in">
+          <div class="code-header">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <p>portfolio.jsx</p>
+          </div>
+          <pre><code><span class="line"><span class="tag">&lt;Portfolio</span> <span class="prop">developer</span>=<span class="string">"Brandon Huntley"</span><span class="tag">&gt;</span></span>
+<span class="line">  <span class="keyword">const</span> <span class="variable">stack</span> = [</span>
+<span class="line">    <span class="string">"HTML"</span>,</span>
+<span class="line">    <span class="string">"CSS"</span>,</span>
+<span class="line">    <span class="string">"JavaScript"</span>,</span>
+<span class="line">    <span class="string">"React"</span></span>
+<span class="line">  ];</span>
+<span class="line">  <span class="keyword">const</span> <span class="variable">mission</span> =</span>
+<span class="line">    <span class="string">"Build clean, useful web experiences"</span>;</span>
+<span class="line">  <span class="keyword">const</span> <span class="variable">status</span> =</span>
+<span class="line">    <span class="string">"Open to junior developer roles"</span>;</span>
+<span class="line"><span class="tag">&lt;/Portfolio&gt;</span></span></code></pre>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-title fade-in">
+          <p>// Get to know me</p>
+          <h2>About Me</h2>
+        </div>
+        <div class="about-grid fade-in">
+          <div class="about-card file-card">
+            <div class="tab">About.jsx</div>
+            <h3>Developer with real-world operations experience</h3>
+            <p>
+              I'm Brandon Huntley, a software developer based in Raleigh, North Carolina. After completing Springboard's Software Development Bootcamp, I've focused on building responsive web applications using HTML, CSS, JavaScript, and React.
+            </p>
+            <p>
+              My background in transportation operations has strengthened my problem-solving, leadership, communication, and ability to perform under pressure — skills I now bring into software development.
+            </p>
+          </div>
+          <div class="quick-facts file-card">
+            <div><strong>Location</strong><span>Raleigh, NC</span></div>
+            <div><strong>Education</strong><span>Springboard • UCM • Pratt CC</span></div>
+            <div><strong>Focus</strong><span>Front-End / Full-Stack Growth</span></div>
+            <div><strong>Email</strong><span>brandonhuntley902@gmail.com</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-title fade-in">
+          <p>// What I work with</p>
+          <h2>Technical Skills</h2>
+        </div>
+        <div class="skills-grid fade-in">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+          <span>Vue</span><span>Bootstrap</span><span>Git</span><span>GitHub</span>
+          <span>REST APIs</span><span>Responsive Design</span><span>npm</span><span>Vite</span>
+          <span>Debugging</span><span>Accessibility</span><span>SEO Basics</span><span>Agile</span>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-title fade-in">
+          <p>// Selected work</p>
+          <h2>Featured Projects</h2>
+        </div>
+
+        <div class="project-filters fade-in">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="javascript">JavaScript</button>
+          <button class="filter-btn" data-filter="react">React</button>
+        </div>
+
+        <div class="projects-grid fade-in" id="projectGrid">
+          <article class="project-card" data-category="javascript">
+            <div class="project-image">☀️</div>
+            <h3>Weather App</h3>
+            <p>Weather application that uses API data to display real-time weather based on user input.</p>
+            <div class="project-tags"><span>JavaScript</span><span>API</span><span>CSS</span></div>
+            <div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div>
+          </article>
+
+          <article class="project-card" data-category="javascript">
+            <div class="project-image">🎯</div>
+            <h3>Jeopardy Game</h3>
+            <p>Interactive trivia game using DOM manipulation, events, API data, and reset functionality.</p>
+            <div class="project-tags"><span>JavaScript</span><span>DOM</span><span>API</span></div>
+            <div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div>
+          </article>
+
+          <article class="project-card" data-category="react">
+            <div class="project-image">🚀</div>
+            <h3>Spacecraft Explorer</h3>
+            <p>React app for viewing spacecraft, building a fleet, and navigating dynamic project routes.</p>
+            <div class="project-tags"><span>React</span><span>Router</span><span>Components</span></div>
+            <div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div>
+          </article>
+
+          <article class="project-card" data-category="javascript">
+            <div class="project-image">🧮</div>
+            <h3>Calculator</h3>
+            <p>Clean calculator app built with HTML, CSS, and JavaScript for basic arithmetic operations.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div>
+          </article>
+
+          <article class="project-card" data-category="javascript">
+            <div class="project-image">✅</div>
+            <h3>ToDo List</h3>
+            <p>Task tracking tool that helps users organize, prioritize, and manage daily tasks.</p>
+            <div class="project-tags"><span>JavaScript</span><span>Local Storage</span><span>UI</span></div>
+            <div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div>
+          </article>
+
+          <article class="project-card" data-category="javascript">
+            <div class="project-image">💬</div>
+            <h3>Random Quote Generator</h3>
+            <p>Generates random quotes while avoiding repeated quotes during the same session.</p>
+            <div class="project-tags"><span>JavaScript</span><span>Arrays</span><span>Logic</span></div>
+            <div class="project-links"><a href="#">Live Demo</a><a href="#">GitHub</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-title fade-in">
+          <p>// My background</p>
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline fade-in">
+          <div class="timeline-item">
+            <span class="date">June 2024 — Present</span>
+            <h3>Transportation Associate T3 — Amazon</h3>
+            <p>Manage trailer yard activities, perform local hostler moves, conduct audits, support trailer and dock compliance, and help maintain safe, timely trailer flow.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="date">October 2021 — June 2024</span>
+            <h3>Associate T1 — Amazon</h3>
+            <p>Supported fulfillment operations including picking, ICQA, AFM, pack, Amazon Robotics floor support, inventory systems, amnesty processing, and Acting QB leadership.</p>
+          </div>
+          <div class="timeline-item">
+            <span class="date">October 2018 — July 2021</span>
+            <h3>PIT Operator — Dollar Tree</h3>
+            <p>Operated reach truck equipment, supported warehouse operations, tracked stock levels, verified shipments, and maintained inventory accuracy.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="section-title fade-in">
+          <p>// Learning path</p>
+          <h2>Education</h2>
+        </div>
+        <div class="education-timeline fade-in">
+          <article class="education-card">
+            <span class="date">2026</span>
+            <h3>Springboard</h3>
+            <p class="degree">Software Development Bootcamp</p>
+            <p>Completed May 2026</p>
+          </article>
+          <article class="education-card">
+            <span class="date">2021</span>
+            <h3>University of Central Missouri</h3>
+            <p class="degree">Bachelor of Science</p>
+            <p>Professional Pilot</p>
+            <p>Minor in Computer Science</p>
+            <p>Graduated May 2021</p>
+          </article>
+          <article class="education-card">
+            <span class="date">2018</span>
+            <h3>Pratt Community College</h3>
+            <p class="degree">Associate Degree</p>
+            <p>Computer Science</p>
+            <p>Graduated May 2018</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-title fade-in">
+          <p>// Let's connect</p>
+          <h2>Contact</h2>
+        </div>
+        <p class="fade-in">I'm open to software developer, front-end developer, and junior software engineer opportunities.</p>
+        <div class="contact-links fade-in">
+          <a href="mailto:brandonhuntley902@gmail.com">Email Me</a>
+          <a href="https://www.linkedin.com/in/brandon-huntley-36227b21a" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">GitHub</a>
+          <a href="Brandon_Huntley_Resume.pdf" download>Resume</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Brandon Huntley. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
